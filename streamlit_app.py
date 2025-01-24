@@ -21,4 +21,12 @@ with st.expander('Data'):
     y
 
 with st.expander('Data visualization'):
+    st.write('**Scatterplot Chart**')
+    # Future implementation: let use choose variables.
     st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+
+# Data preparations
+with st.sidebar:
+    st.header('Input features')
+    island = st.selectbox('Island',
+                          ('Torgersen', 'Dream', 'Biscoe'))
