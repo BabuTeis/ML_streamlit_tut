@@ -141,6 +141,11 @@ df_prediction_proba.rename(columns={0: 'Adelie',
 
 # Display predicted species probabilities
 st.subheader('Predicted Species')
+st.write('The probabilities displayed show the likelihood of '
+         'the penguin belonging to each species '
+         '(Adelie, Chinstrap, or Gentoo) based on '
+         'the input features. The species with the '
+         'highest probability is the predicted classification.')
 st.dataframe(df_prediction_proba,
              column_config={
                'Adelie': st.column_config.ProgressColumn(
