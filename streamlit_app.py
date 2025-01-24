@@ -7,7 +7,7 @@ st.title('🤖 Machine Learning App')
 
 st.info('This is a machine learning app, made by BabuTeis.')
 
-st.text('This website is an **interactive machine learning app designed '
+st.markdown('This website is an **interactive machine learning app designed '
         'to classify penguin species** based on user-provided features '
         'such as island, bill length, bill depth, flipper length, body '
         'mass, and gender. Users can input these features using intuitive '
