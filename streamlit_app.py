@@ -170,5 +170,5 @@ st.dataframe(df_prediction_proba,
 penguins_species: np.ndarray = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguins_species[prediction][0]))
 
-st.markdown('Version: 1.00')
-st.markdown('Latest Update: 1/24/25')
+st.markdown('**Version**: *1.00*')
+st.markdown('**Latest Update**: *1/24/25*')
