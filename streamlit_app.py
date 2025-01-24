@@ -19,6 +19,18 @@ st.markdown('Users can input these features using intuitive '
             'to explore and visualize the underlying dataset, making it '
             'an engaging tool for understanding machine learning in action.')
 
+# Information about the data
+with st.expander('Data Information'):
+    st.write('**Orginal Dataset:**')
+    st.link_button('kaggle penguin dataset',
+                   'https://www.kaggle.com/code/parulpandey/'
+                   'penguin-dataset-the-new-iris')
+
+    st.write('**Cleaned Dataset:**')
+    st.link_button('Cleander dataset by DataProfessor',
+                   'https://raw.githubusercontent.com/'
+                   'dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
+
 with st.expander('Data'):
     st.write('**Raw data**')
 
@@ -153,3 +165,6 @@ st.dataframe(df_prediction_proba,
 # Get the species names for the prediction
 penguins_species: np.ndarray = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguins_species[prediction][0]))
+
+st.markdown('Version: 1.00')
+st.markdown('Latest Update: 1/24/25')
