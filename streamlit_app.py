@@ -175,5 +175,15 @@ st.dataframe(df_prediction_proba,
 penguins_species: np.ndarray = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguins_species[prediction][0]))
 
+# Show picture of the penguin
+if str(penguins_species[prediction][0]) == 'Adelie':
+    st.image('https://upload.wikimedia.org/wikipedia/'
+             'commons/0/08/South_Shetland-2016-Deception_'
+             'Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_'
+             'antarctica%29_04.jpg', caption='Adelie Penguin Photo')
+#elif str(penguins_species[prediction][0]) == 'Chinstrap':
+#    st.image('', caption='Chinstrap Penguin Photo')
+
+
 st.markdown('**Version**: *1.00*')
 st.markdown('**Latest Update**: *1/24/25*')
