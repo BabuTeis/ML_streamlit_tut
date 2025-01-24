@@ -176,13 +176,22 @@ penguins_species: np.ndarray = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguins_species[prediction][0]))
 
 # Show picture of the penguin
-if str(penguins_species[prediction][0]) == 'Adelie':
+if str(penguins_species[prediction][0]) == 'Chinstrap':
     st.image('https://upload.wikimedia.org/wikipedia/'
              'commons/0/08/South_Shetland-2016-Deception_'
              'Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_'
-             'antarctica%29_04.jpg', caption='Adelie Penguin Photo')
-#elif str(penguins_species[prediction][0]) == 'Chinstrap':
-#    st.image('', caption='Chinstrap Penguin Photo')
+             'antarctica%29_04.jpg', caption='Chinstrap Penguin Photo',
+             use_container_width=True)
+elif str(penguins_species[prediction][0]) == 'Adelie':
+    st.image('https://upload.wikimedia.org/wikipedia/'
+             'commons/0/03/Adelie_Penguin.jpg', caption='Adelie Penguin Photo',
+             use_container_width=True)
+elif str(penguins_species[prediction][0]) == 'Gentoo':
+    st.image('https://www.nzbirdsonline.org.nz/assets/'
+             '95597/1691015063-24e758e0c6d04f6349e7c84725004114'
+             '.jpg?auto=format&fit=crop&w=1200',
+             caption='Gentoo Penguin Photo',
+             use_container_width=True)
 
 
 st.markdown('**Version**: *1.00*')
