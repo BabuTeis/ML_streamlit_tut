@@ -35,6 +35,27 @@ with st.expander('Data Information'):
     st.image('https://education.rstudio.com/blog/2020/'
              '07/palmerpenguins-cran/gorman-penguins.jpg')
 
+    st.write('**Features Used Information**')
+    st.markdown("""
+    - **`island`**
+    The island where the penguin was observed.
+
+    - **`bill_length_mm`**
+    The length of the penguin's bill (beak) in millimeters.
+
+    - **`bill_depth_mm`**
+    The depth (thickness) of the penguin's bill in millimeters.
+
+    - **`flipper_length_mm`**
+    The length of the penguin's flipper in millimeters.
+
+    - **`body_mass_g`**
+    The body mass of the penguin in grams.
+
+    - **`sex`**
+    The gender of the penguin.
+    """)
+
 with st.expander('Data'):
     st.write('**Raw data**')
 
