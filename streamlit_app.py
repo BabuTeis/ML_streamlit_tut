@@ -27,7 +27,7 @@ with st.expander('Data Information'):
                    'penguin-dataset-the-new-iris')
 
     st.write('**Cleaned Dataset:**')
-    st.link_button('Cleander dataset by DataProfessor',
+    st.link_button('Cleaned dataset by DataProfessor',
                    'https://raw.githubusercontent.com/'
                    'dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
 
