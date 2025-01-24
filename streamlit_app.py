@@ -22,7 +22,7 @@ st.markdown('Users can input these features using intuitive '
 # Information about the data
 with st.expander('Data Information'):
     st.write('**Orginal Dataset:**')
-    st.link_button('kaggle penguin dataset',
+    st.link_button('Kaggle penguin dataset',
                    'https://www.kaggle.com/code/parulpandey/'
                    'penguin-dataset-the-new-iris')
 
@@ -30,6 +30,10 @@ with st.expander('Data Information'):
     st.link_button('Cleaned dataset by DataProfessor',
                    'https://raw.githubusercontent.com/'
                    'dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
+
+    st.write('**Penguin Species**')
+    st.image('https://education.rstudio.com/blog/2020/'
+             '07/palmerpenguins-cran/gorman-penguins.jpg')
 
 with st.expander('Data'):
     st.write('**Raw data**')
